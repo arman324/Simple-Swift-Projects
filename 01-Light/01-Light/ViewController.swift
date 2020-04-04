@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         myLabel.textColor = UIColor(ciColor: .black)
-        mainLabel.textColor = UIColor(ciColor: .white)
+        mainLabel.textColor = UIColor(ciColor: .black)
         // Do any additional setup after loading the view.
     }
 
