@@ -10,15 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var buttonPressed: UIView!
-
+    @IBOutlet var myLabel: UILabel!
+    
+    var lightMode = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
 
     @IBAction func buttonPressed(_ sender: Any) {
-        print("it was changed!")
+        
+        lightMode.toggle()
+        updateUI()
+
     }
-    
+    func updateUI() {
+        if lightMode {
+            view.backgroundColor = .white
+        } else {
+            view.backgroundColor = .black
+        }
+    }
 }
 
