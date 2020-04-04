@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        myLabel.textColor = UIColor(ciColor: .black)
         // Do any additional setup after loading the view.
     }
 
@@ -29,8 +29,11 @@ class ViewController: UIViewController {
     func updateUI() {
         if lightMode {
             view.backgroundColor = .white
+            myLabel.textColor = UIColor(ciColor: .black)
+
         } else {
             view.backgroundColor = .black
+            myLabel.textColor = UIColor(ciColor: .white)
         }
     }
 }
