@@ -32,12 +32,26 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="U1N-tF-uOV"/>
                                 </connections>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4T-cj-J4j">
+                                <rect key="frame" x="20" y="190" width="374" height="516"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Swift is a powerful and intuitive programming language for macOS, iOS, watchOS, tvOS and beyond. Writing Swift code is interactive and fun, the syntax is concise yet expressive, and Swift includes modern features developers love. Swift code is safe by design, yet also produces software that runs lightning-fast.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="26" name="Times-Roman"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="buttonPressed" destination="8bC-Xf-vdC" id="D2Q-Cx-gwF"/>
+                        <outlet property="mainLabel" destination="w4T-cj-J4j" id="r2C-Zb-ZNN"/>
                         <outlet property="myLabel" destination="e1i-j5-mMH" id="0YD-a7-PU4"/>
                     </connections>
                 </viewController>

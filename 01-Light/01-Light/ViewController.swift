@@ -11,12 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var buttonPressed: UIView!
     @IBOutlet var myLabel: UILabel!
+    @IBOutlet var mainLabel: UILabel!
     
     var lightMode = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
         myLabel.textColor = UIColor(ciColor: .black)
+        mainLabel.textColor = UIColor(ciColor: .white)
         // Do any additional setup after loading the view.
     }
 
@@ -30,10 +32,11 @@ class ViewController: UIViewController {
         if lightMode {
             view.backgroundColor = .white
             myLabel.textColor = UIColor(ciColor: .black)
-
+            mainLabel.textColor = UIColor(ciColor: .black)
         } else {
             view.backgroundColor = .black
             myLabel.textColor = UIColor(ciColor: .white)
+            mainLabel.textColor = UIColor(ciColor: .white)
         }
     }
 }
